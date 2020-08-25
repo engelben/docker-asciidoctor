@@ -87,6 +87,8 @@ RUN apk add --no-cache --virtual .pythonmakedepends \
     seqdiag \
   && apk del -r --no-cache .pythonmakedepends
 
+ENV slides=asciidoctor-revealjs -a revealjsdir=https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2
+
 WORKDIR /documents
 VOLUME /documents
 
